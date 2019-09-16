@@ -1,10 +1,10 @@
 class UsersController < ApplicationController
   include SessionsHelper
-
+  before_action :logged_in_user, only: [:edit, :update, :index]
   before_action :correct_user, only: [:show, :edit, :update]
 
   def index
-    @users = User.paginate(page: params[:page],per_page: 5)
+    @users = User.paginate(page: params[:page])
   end
 
   def show
