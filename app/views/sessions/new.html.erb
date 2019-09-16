@@ -1,0 +1,22 @@
+<% provide(:title, "Login to continue") %>
+<div class="bia">
+ <h1 class="login100-form-title p-b-43">Login to continue</h1>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3 ">
+        <%=form_for(:session, url: login_path) do |f| %>
+            <%=f.label :email%>
+            <%=f.email_field :email, class: 'form-control', placeholder: " Enter your email "%>
+
+            <%=f.label :password %>
+            <%=f.password_field :password, class: 'form-control', placeholder: "Enter your password"%>
+
+           <%= f.submit "Log in", class: "btn btn-primary" %>
+        <%end%>
+
+           
+
+
+        <p>New user? <%=link_to "Sign up now", signup_path %> </p>
+    </div>
+    </div>
+</div>

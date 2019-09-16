@@ -1,0 +1,33 @@
+.login100-form {
+    width: 860px;
+
+    display: block;
+    background-color: #f7f7f7;
+    padding: 173px 900px 165px;
+   
+}
+.image{
+    background-image: url("12.jpg");
+    background-repeat: no-repeat
+ 
+}
+.login100-more {
+    width: calc(100% - 560px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.login100-form-title {
+    width: 100%;
+    display: block;
+    font-family: Poppins-Regular;
+    font-size: 30px;
+    color: #333;
+    line-height: 1.8;
+    text-align: center;
+}
+.p-b-43 {
+    padding-bottom: 4px;
+}
